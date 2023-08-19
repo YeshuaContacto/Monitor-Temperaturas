@@ -28,10 +28,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton.clicked.connect(self.nuevaLectura)
         self.pushButton_2.clicked.connect(partial(self.nuevaLectura, True))
 
-        # Documentación: http://pyqtgraph.org/
-        # Simbolos: https://www.geeksforgeeks.org/pyqtgraph-symbols/
-        # Ejemplos interactivos: python -m pyqtgraph.examples
-
     def construirGrafico(self):
         # configuración base
         self.widget.addLegend()
